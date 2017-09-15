@@ -50,7 +50,13 @@ export interface ExampleSchema {
 
 ## Installation
 
-`npm install json-schema-to-typescript --save`
+```sh
+# Using Yarn:
+yarn add json-schema-to-typescript
+
+# Or, using NPM:
+npm install json-schema-to-typescript --save
+```
 
 ## Usage
 
@@ -80,11 +86,7 @@ See [server demo](example) and [browser demo](https://github.com/bcherny/json-sc
 | cwd       | string      | Root directory for resolving `$ref`s |
 | declareExternallyReferenced | boolean | Declare external schemas referenced via `$ref`? |
 | enableConstEnums | boolean | Prepend enums with `const`? |
-| enableTrailingSemicolonForTypes | boolean | |
-| enableTrailingSemicolonForEnums | boolean | |
-| enableTrailingSemicolonForInterfaceProperties | boolean | |
-| enableTrailingSemicolonForInterfaces | boolean | |
-| indentWith | string | Tabs or spaces? |
+| style | object | A [Prettier](https://prettier.io/docs/en/options.html) configuration |
 
 ## CLI
 
